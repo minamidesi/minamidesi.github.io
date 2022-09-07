@@ -1,561 +1,428 @@
-
 <!DOCTYPE html>
-<html lang="zh" style="display: none;">
+<html>
+    <head>
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.2.6 -->
 
-  
-<head>
-  <script>
-    window.mduiVersion = "1.5.4"
-    window.oldVersion = [
-     '1.5.3',
-     '1.5.1',
-     '1.5.2',
-     'unknownVersion'
-    ]
-  </script>
-  <!--
-        © HEXO MDUI Theme
-        https://github.com/Halyul/hexo-theme-mdui
-        Version: 1.5.4 -->
-  <meta charset="UTF-8">
-  <title>标签: Tag1 - markpeng</title>
-
-  <!-- Favicons -->
-  <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
-  <link rel="icon" sizes="192x192" href="/img/favicon.png">
-  <link rel="apple-touch-icon" href="/img/favicon.png">
-
-  <!-- Meta & Info -->
-  <meta http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-  
-    <meta name="theme-color" content="
-  
-  #3F51B5
-  
-
-">
-  
-
-  <meta name="author" content="Mark Peng">
-  
-      <meta name="description" content="where is description">
-  
-  <meta name="keywords" content="blog, hexo, mdui">
-
-  <!--iOS -->
-  <meta name="apple-mobile-web-app-title" content="markpeng">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="480">
-
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-
-  <!-- The Open Graph protocol -->
-  <meta property="og:url" content="http://example.com">
-  <meta property="og:type" content="blog">
-  <meta property="og:title" content="标签: Tag1 - markpeng | markpeng">
-  <meta property="og:image" content="/img/favicon.png" />
-  
-        <meta property="og:description" content="where is description">
+    <!-- Title -->
     
+    <title>
+        
+            标签: Tag1 | 
+        
+        markpeng
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Mark Peng">
+    <meta name="description" content="where is description">
+    <meta name="keywords" content="">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="markpeng">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://example.com">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="标签: Tag1 | markpeng">
+    <meta property="og:description" content="where is description">
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS -->
+    
+<link rel="stylesheet" href="/css/material.min.css">
 
     
+<link rel="stylesheet" href="/css/style.min.css">
 
-  
+    <!-- Config CSS -->
 
-  <script>
-    (function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.mduiVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf(c)!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();
-  </script>
 
-  <!-- Import CSS -->
-  
+<!-- Other Styles -->
+<style>
+    body, html {
+        font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    }
+
+    a {
+        color: #00838F;
+    }
+
+    .mdl-card__media,
+    #search-label,
+    #search-form-label:after,
+    #scheme-Paradox .hot_tags-count,
+    #scheme-Paradox .sidebar_archives-count,
+    #scheme-Paradox .sidebar-colored .sidebar-header,
+    #scheme-Paradox .sidebar-colored .sidebar-badge{
+        background-color: #0097A7 !important;
+    }
+
+    /* Sidebar User Drop Down Menu Text Color */
+    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+        color: #0097A7 !important;
+    }
+
+    #post_entry-right-info,
+    .sidebar-colored .sidebar-nav li:hover > a,
+    .sidebar-colored .sidebar-nav li:hover > a i,
+    .sidebar-colored .sidebar-nav li > a:hover,
+    .sidebar-colored .sidebar-nav li > a:hover i,
+    .sidebar-colored .sidebar-nav li > a:focus i,
+    .sidebar-colored .sidebar-nav > .open > a,
+    .sidebar-colored .sidebar-nav > .open > a:hover,
+    .sidebar-colored .sidebar-nav > .open > a:focus,
+    #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+        color: #0097A7 !important;
+    }
+
+    .toTop {
+        background: #757575 !important;
+    }
+
+    .material-layout .material-post>.material-nav,
+    .material-layout .material-index>.material-nav,
+    .material-nav a {
+        color: #757575;
+    }
+
+    #scheme-Paradox .MD-burger-layer {
+        background-color: #757575;
+    }
+
+    #scheme-Paradox #post-toc-trigger-btn {
+        color: #757575;
+    }
+
+    .post-toc a:hover {
+        color: #00838F;
+        text-decoration: underline;
+    }
+</style>
+
+
+<!-- Theme Background Related-->
+
     <style>
-      @import url('https://fonts.googleapis.com/icon?family=Material+Icons');@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:local('Material Icons'),local('MaterialIcons-Regular'),url(/icons/material-icons/MaterialIcons-Regular.woff2) format('woff2'),url(/icons/material-icons/MaterialIcons-Regular.woff) format('woff')}@font-face{font-family:'FontAwesome';font-weight:normal;font-style:normal;src:url(/fonts/fontawesome-webfont.eot?v=4.7.0);src:url(/fonts/fontawesome-webfont.eot?#iefix&amp;v=4.7.0) format('embedded-opentype'),url(/fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'),url(/fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'),url(/fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'),url(/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg')}  
-    </style>
-  
-  
-    
-      <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style-now.min.css?Q3IlX8SDWal9tefi13UmFw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-    
-  
+        body{
+            background-color: #F5F5F5;
+        }
 
-  
+        /* blog_info bottom background */
+        #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+            background-color: #fff;
+        }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
     <style>
-      body {
-        background-color: #eeeeee;
-      }
+        .fade {
+            transition: all 800ms linear;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+            opacity: 1;
+        }
+
+        .fade.out{
+            opacity: 0;
+        }
     </style>
-  
 
-  
 
-  
+    
+<script src="/js/jquery.min.js"></script>
+
+
+    
+<link rel="stylesheet" href="/css/highlight/solarized-white.css">
+
+
+    <!-- UC Browser Compatible-->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    <!-- Custom Head -->
+    
 <meta name="generator" content="Hexo 6.2.0"></head>
 
 
-
-
-  
     
-  <body class="mdui-theme-primary-indigo mdui-theme-accent-blue
-   
-  
-    mdui-appbar-with-toolbar
-  
-  
-    side-content style-fix
-  " onresize="styleChanging()">
-
-
-  
-
-
-<div id="top"></div>
-
-
-  
-
-    <div class="mdui-appbar animate-appbar mdui-shadow-0 mdui-appbar-fixed" id="blog-appbar">
-      <div class="mdui-toolbar mdui-color-theme mdui-shadow-2">
-        <button class="mdui-btn mdui-ripple mdui-btn-icon drawer-button" mdui-drawer="{target: '#drawer'}">
-          <i class="mdui-icon">
-            <span></span>
-          </i>
-        </button>
-        
-          <a href="/" class="mdui-typo-headline">
-            Title
-          </a>
-          <span class="appbar-border-line mdui-hidden-xs"></span>
-        
-        
-          <span class="mdui-typo-title mdui-hidden-xs"
-            
-              onclick="smoothScroll.animateScroll( 0 );"
-            
-          >
-            Tag1
-          </span>
-        
-        
-        
-          <div class="flex-spacer"></div>
-        
-        
-        
-
-      </div>
-    </div>
-  
-
-  <div id="search-cover" searchResult onclick="closeSearch()"></div>
-
-
-
-
-
-
-  
-  <div class="mdui-drawer mdui-drawer-full-height mdui-drawer-close
-  
-    drawer-fix
-  " id="drawer" style="z-index: 2001;">
-  <div class="userview" style="background-image: url(/img/bg.png)">
-  <div class="overlay">
-    <img class="mdui-img-circle avatar" src="/img/avatar.png"/>
-    <div class="bottom">
-      <div class="info">
-        <div class="author mdui-text-color-white-text">
-          Mark Peng
-        </div>
-        <div class="slogan mdui-text-color-white-secondary">
-          I&#39;m your slogan!
-        </div>
-      </div>
-      <div class="flex-spacer"></div>
-      
-    </div>
-  </div>
-</div>
-
-  <div class="content">
-  <div class="hexo">
-    
-      <div class="mdui-list no-padding-bottom">
-        <a href="/">
-          <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
-            <div class="mdui-list-item-content">
-              首页
+        <body id="scheme-Isolation">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+                    <!-- Isolation Header -->
+                    <header class="header">
+    <div class="header-wrapper">
+        <!-- Header Copyright -->
+        <div class="header-copyright">
+            <div class="header-site">
+                ©&nbsp;
+                <script type="text/javascript">
+                    var fd = new Date();
+                    document.write(fd.getFullYear());
+                </script>
+                &nbsp;markpeng
             </div>
-          </li>
+            <!--
+            I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+            It will not impact the appearance and can give developers a lot of support :)
+
+            很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+            它不会影响美观并可以给开发者很大的支持。 :)
+            -->
+            <div>
+                Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a>
+                <br>
+                Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a>
+            </div>
+        </div>
+
+        <!-- Header Title -->
+        <span class="header-title header-item">
+            <a href="/" title="markpeng">
+                markpeng
+            </a>
+        </span>
+
+        <p class="header-slogan header-item">
+            滨边白夜
+        </p>
+
+        <!-- Header Nav -->
+        <nav class="header-nav header-item">
+            <span class="header-nav-item">
+                <a href="/" title="Home">
+                    <span>主页</span>
+                </a>
+            </span>
+
+          <!-- Independent Pages -->
+          
+        </nav>
+
+        <!-- Header SNS -->
+        <div class="header-item header-sns_list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
         </a>
-      </div>
     
+
+    <!-- Facebook -->
     
-      <div class="mdui-list no-padding">
-        <a href="/archives">
-          <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
-            <div class="mdui-list-item-content">
-              归档
-              <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
-            </div>
-          </li>
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
         </a>
-      </div>
     
+
+    <!-- Google + -->
     
-      <div class="mdui-list no-padding-top" mdui-collapse="{accordion: true}" mdui-collapse>
-        
-          <div class="mdui-collapse-item ">
-            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-              <i class="mdui-list-item-icon mdui-icon material-icons">&#xe86e;</i>
-              <div class="mdui-list-item-content">分类</div>
-              <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
-            </div>
-            <div class="mdui-collapse-item-body mdui-list">
-              
-                <a href="/categories/Test/" class="mdui-list-item mdui-ripple" style="display: flex">
-                  Test
-                  <div style="flex-grow: 1;"></div>
-                  <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
-                </a>
-              
-            </div>
-          </div>
-        
-        
-          <div class="mdui-collapse-item mdui-collapse-item-open">
-            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-              <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
-              <div class="mdui-list-item-content">标签</div>
-              <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
-            </div>
-            <div class="mdui-collapse-item-body mdui-list">
-              
-                <a href="/tags/Tag1/" class="mdui-list-item mdui-ripple" style="display: flex">
-                  Tag1
-                  <div style="flex-grow: 1;"></div>
-                  <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
-                </a>
-              
-                <a href="/tags/Tag2/" class="mdui-list-item mdui-ripple" style="display: flex">
-                  Tag2
-                  <div style="flex-grow: 1;"></div>
-                  <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
-                </a>
-              
-            </div>
-          </div>
-        
-        <div class="mdui-collapse-item ">
-          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
-            <div class="mdui-list-item-content">年份</div>
-            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
-          </div>
-          <div class="mdui-collapse-item-body mdui-list">
-            
-            
-              <a href="/archives/2022/" class="mdui-list-item mdui-ripple">
-                2022
-              </a>
-            
-          </div>
-        </div>
-      </div>
+        <a href="https://www.google.com/" target="_blank">
+            <i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
+        </a>
     
-  </div>
-  
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/minamidesi" target="_blank">
+            <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+        </a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Telegram -->
+    
 </div>
 
-  <div class="flex-spacer"></div>
-  <div class="drawer-footer">
-  <div class="mdui-typo mdui-typo-caption-opacity">
-    Powered by <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a>
-    <br />
-    Theme - <a target="_blank" rel="noopener" href="//github.com/Halyul/hexo-theme-mdui">Halyul/MDUI</a>
-    <br />
-    <span>
-      Copyright ©
-      <span year></span>
-      Mark Peng
-    </span>
+    </div>
+</header>
+
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
     
+    <div class="locate-thumbnail-symbol"></div>
+
     
-      <br />
-      <span>
-        最后更新于：9月 07, 2022
-      </span>
+        
+        
+            <!-- Isolation Thumbnail -->
+            <div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
+    <!-- Post_entry Header -->
     
+        <!-- Post Header Info -->
+        <div class="post_entry-header_info without-thumbnail">
+            <!-- Author Avatar & Name -->
+            <img src="/img/avatar.png" class="avatar-img" width="44px" height="44px" alt="Mark Peng's avatar">
+            <span class="name-span">Mark Peng</span>
+        </div>
+
+        <!-- Null Thumbnail -->
+        <div class="post_thumbnail-null">
     
-  </div>
+        </div>
+
+    <!-- Post_entry Content -->
+    <div class="post_entry-content mdl-color-text--grey-600 mdl-card__supporting-text">
+        <!-- Post Title -->
+        <p class="post_entry-title">
+            <a href="/2022/08/02/test/">test</a>
+        </p>
+
+        <!-- Post Excerpt -->
+        <p class="post_entry-excerpt">
+            
+                测试图片是否能否post上去。
+
+            
+            &nbsp;&nbsp;&nbsp;
+            <span>
+                <a href="/2022/08/02/test/" target="_self">继续阅读</a>
+            </span>
+        </p>
+
+        <!-- Post Tags -->
+        <ul class="post_entry-tags-list" itemprop="keywords"><li class="post_entry-tags-list-item"><a class="post_entry-tags-list-link" href="/tags/Tag1/" rel="tag">Tag1</a></li><li class="post_entry-tags-list-item"><a class="post_entry-tags-list-link" href="/tags/Tag2/" rel="tag">Tag2</a></li></ul>
+    </div>
+
+    <!-- Post_entry Footer -->
+    <div class="post_entry-footer">
+        <div class="post_entry-footer-border"></div>
+        <div class="post_entry-footer-info">
+            <div class="post_entry-footer-date">
+                8月 02, 2022
+            </div>
+            <div class="post_entry-footer-comment">
+                
+            </div>
+        </div>
+    </div>
 </div>
+
+        
+    
+
+    
+
+    
+</div>
+
+
+                    
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+</footer>
+
+
+                    <!-- Import File -->
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/js.min.js"></script>
+
+
+<script src="/js/nprogress.js"></script>
+
+
 <script type="text/javascript">
-  var copyrightNow = new Date().getFullYear();
-  var textContent = document.querySelector('span[year]')
-  
-    textContent.textContent = copyrightNow
-  
-</script>
-
-</div>
-
-
-
-
-
-
-  
-
-  <style id="side_content_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("side_content_css","/css/src/now/side_content.min.css?6QUsjVbcFbaNw1GxvnmHrA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-
-<div id="side-content" class="mdui-color-green animate-drawer">
-  <div class="mdui-grid-tile" style="overflow: visible;">
-    <div class="bg">
-      <img src="/img/random/picHD_35.png" />
-    </div>
-    <div class="mdui-grid-tile-actions mdui-grid-tile-actions-top mdui-grid-tile-actions-gradient">
-      <div class="flex-spacer"></div>
-      <div class="mdui-grid-tile-buttons">
-        
-
-      </div>
-    </div>
-  </div>
-  <div class="content">
-    <img class="mdui-img-circle avatar" src="/img/avatar.png"/>
-    <div class="author mdui-text-center">
-      Mark Peng
-    </div>
-    <div class="name">
-      Tag1
-    </div>
-    <div class="length">
-      
-      1篇文章
-    </div>
-  </div>
-</div>
-<div id="contentLocation"></div>
-
-
-
-<main>
-  <div class="posts-container column-3">
-
-</div>
-<div id="content-list" class="animate-post">
-  
-    <div class="content-item">
-      
-  
-<div class="mdui-card card-bottom-fix mdui-hoverable">
-  <div class="mdui-card-header posts-header">
-    <img class="mdui-card-header-avatar" src="/img/avatar.png"/>
-    <div class="content mdui-valign">
-      <div class="mdui-typo-body-1-opacity mdui-typo">
-        <span>Mark Peng</span>
-        <span> · </span>
-        <span>8月 02, 2022</span>
-      </div>
-    </div>
-  <div class="flex-spacer"></div>
-    <a href="/2022/08/02/test/" target="_self" class="mdui-btn mdui-btn-icon mdui-ripple btn-dense"><i class="mdui-icon material-icons">&#xe89e;</i></a>
-  </div>
-  <div class="mdui-card-content posts-content">
-    <div class="posts-excerpt">
-      <a href="/2022/08/02/test/" target="_self" class="posts-title mdui-typo-title no-text-decoration">
-        
-        test
-      </a>
-      <div class="posts-strip mdui-typo-body-1">
-        测试图片是否能否post上去。
-
-      </div>
-    </div>
-    <div class="flex-spacer"></div>
-    
-      <div class="posts-thumbnail" style="background-image: url(/img/random/picHD_36.png)"></div>
-    
-  </div>
-  
-    <div class="mdui-divider" style="margin: 0 16px;"></div>
-    <div class="posts-bottom">
-      
-        <div class="mdui-chip">
-          <span class="mdui-chip-icon"><i class="mdui-icon
-          
-            mdui-text-color-black-icon
-          
-           material-icons mdui-text-center">&#xe149;</i></span>
-        </div>
-        <div class="content mdui-typo">
-          
-            <a href="/categories/Test/">
-              <span>Test</span>
-            </a>
-          
-        </div>
-      
-      
-        <div class="mdui-chip">
-          <span class="mdui-chip-icon"><i class="mdui-icon
-           
-             mdui-text-color-black-icon
-           
-           fa fa-tags mdui-text-center"></i></span>
-        </div>
-        <div class="content mdui-typo">
-          
-            <a href="/tags/Tag1/">
-              <span>Tag1</span>
-            </a>
-          
-            <a href="/tags/Tag2/">
-              <span>Tag2</span>
-            </a>
-          
-        </div>
-      
-    </div>
-  
-</div>
-
-
-
-    </div>
-  
-</div>
-
-
-
-
-<button id="toTop" class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed mdui-fab-hide" style="z-index: 9;" onclick="smoothScroll.animateScroll( 0 );">
-  <i class="mdui-icon material-icons">&#xe5d8;</i>
-</button>
-
-
-</main>
-
-<div id="outdated" style="z-index: 9999;">
-  <h6>你的浏览器一直过气辣！</h6>
-  <p>赶紧升级浏览器来访问本站吧！<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">现在就去</a></p>
-  <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="关闭">&times;</a></p>
-</div>
-
-
-
-
-<!-- Import JS -->
-
-  <script>lsloader.load("outdatedbrowser_js","/js/outdatedbrowser.min.js?MmKvEvoD8lT7/fO+ebWwWA==", true)</script>
-
-
-
-    <script>lsloader.load("main_js","/js/js.min.js?7Tw9Ng5ky7PDfky4qwNovg==", true)</script>
-
-
-
-
-
-  
-    <script type="text/ls-javascript" id="global-script">
-  /* appbar button */
-  (function() {
-    var drawer = document.querySelector('#drawer')
-    var drawerBtn = document.querySelector('.drawer-button')
-
-    drawer.addEventListener('open.mdui.drawer', function (e) {
-      drawerBtn.classList.add('back')
-    })
-    drawer.addEventListener('close.mdui.drawer', function (e) {
-      drawerBtn.classList.remove('back')
-    })
-  })();
-
-  
-</script>
-
-
-
-
-
-
-
-
-
-
-  <script type="text/ls-javascript" id="style-changing-script">
-  var content_flag = false;
-  var appbar = document.querySelector('div#blog-appbar')
-  var body = document.querySelector('body')
-
-  window.addEventListener('scroll', function() {
-    var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-    var divTop = document.querySelector('div#contentLocation').offsetTop
-    var contentLocation = divTop - scrollTop - 56;
-
-    if (!content_flag && contentLocation < 0 && window.innerWidth < 860) {
-      appbar.classList.add('style-fix');
-      body.classList.remove('style-fix');
-      content_flag = true;
-    } else if (content_flag && contentLocation >= 0 && window.innerWidth < 860) {
-      appbar.classList.remove('style-fix');
-      body.classList.add('style-fix');
-      content_flag = false;
-    };
-  })
-
-  function styleChanging() {
-    var hide = new mdui.Headroom('div#blog-appbar');
-    var windowWidth = window.innerWidth,
-      toLeftWidth = 860;
-    if (windowWidth < toLeftWidth) {
-      hide.enable();
-    } else {
-      hide.disable();
-    }
-  };
-  styleChanging();
-</script>
-
-
-
-
-
-
-  <script type="text/ls-javascript" id="to-top-script">
-  /* fab */
-  (function() {
-    var pageFlag = false;
-    var fab = new mdui.Fab('#toTop');
-    fab.hide();
-    window.addEventListener('scroll', function() {
-      var bodyTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-      var divTop = document.querySelector('div#top').offsetTop
-      var pageLocation = divTop - bodyTop;
-      if (!pageFlag && pageLocation < 0) {
-        fab.show();
-        pageFlag = true;
-      } else if (pageFlag && pageLocation >= 0) {
-        fab.hide();
-        pageFlag = false;
-      }
+    NProgress.configure({
+        showSpinner: true
     });
-  })();
+    NProgress.start();
+
+    $('#nprogress .bar').css({
+        'background': '#FF4081'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #FF4081, 0 0 15px #FF4081'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#FF4081',
+        'border-left-color': '#FF4081'
+    });
+
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
 </script>
 
 
 
 
 
-  
 
 
 
@@ -564,34 +431,25 @@
 
 
 
+<!-- Swiftye -->
 
 
-<!-- remove diplay:none -->
-<script type="text/ls-javascript" id="html-script">
-  if (document.readyState === 'complete' || document.readyState !== 'loading') {
-    showHTML();
-  } else {
-    document.addEventListener('DOMContentLoaded', showHTML);
-  }
-  function showHTML(){
-    document.querySelector('html').style.display = 'block';
-  }
-</script>
+<!-- Local Search-->
 
+
+<!-- Window Load-->
 <script>
-  (function(){
-    var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
-    for (var i = 0; i < scriptList.length; ++i) {
-      var item = scriptList[i];
-      lsloader.runInlineScript(item.id,item.id);
-    }
-  })()
-  /*! Copyright 2017 Halyul */
-  console.info("%cCopyright © 2017 Halyul\n"+'Theme Version: 1.5.4'+'%c\nhttps://github.com/Halyul/hexo-theme-mdui',"font-size: 14px;color: #3F51B5;","color: #448AFF;text-decoration: none");
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
 </script>
 
+<!-- MathJax Load-->
 
 
-</body>
-
+                </main>
+            </div>
+        </body>
+    
 </html>
